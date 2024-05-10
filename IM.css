@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.Banner {
+    width: 100%;
+    height: 805px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(IMPBG.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Logo{
+    width: 150px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #A50104;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.Front {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.Front h1{
+    font-size: 58px;
+    margin-top: 80px;
+}
+.Front p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+
+
+.Info1 {
+    display: flex;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+.IMP1{
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+.Strong{
+    font-weight: 550;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.right1 h1{ 
+    font-size: 45px;
+    padding-right: 30px;
+    color: #14213D;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    text-transform: uppercase;
+}
+.right1 p{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Info2 p{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Info2{
+    padding: 200px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.Info4 h1{
+    font-size: 40px;
+    color: #1b2c53;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+}
+.Info3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 15px;
+    width: 15px;
+    border: solid #000000 2px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: linear-gradient(#A50104,#4163ac);}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+.Info5 p{
+    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+
+.Title2{ 
+    font-size: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0px;
+    color: #14213D;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    align-content: center;
+    width: 100%;
+    }
+    .Table{
+    padding: 250px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    align-items: center;
+    align-content: center;
+    }
+
+    td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+    }
+
+    tr:nth-child(even) {
+  background-color: #dddddd;
+    }
+
+
+
+.foot{
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+}
+.HN{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px;
+    font-weight: bold;
+    background: #fff;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+}
+.HN:hover{
+    width: 180px;
+    background: transparent;
+    border: 2px solid #A50104;
+    color: #fff;
+}
